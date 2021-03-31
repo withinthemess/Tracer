@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cloud">
+
+
+    <TextView
+        android:id="@+id/helloTitle"
+        style="@style/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/hello"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/home_userFirstName"
+        style="@style/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="64dp"
+        android:text="Alex"
+        app:layout_constraintStart_toEndOf="@+id/helloTitle"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/accountIconSmall"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_user"
+        android:onClick="toAccountDetails"/>
+
+    <TextView
+        android:id="@+id/emergencyContacts"
+        style="@style/H3"
+        android:text="@string/emergency_contacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/helloTitle" />
+
+    <ImageView
+        android:id="@+id/addButton"
+        style="@style/homeButtonDimens"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emergencyContacts"
+        app:srcCompat="@drawable/ic_homescreenbutton"
+        android:onClick="toAddContact"/>
+
+    <ImageView
+        android:id="@+id/addIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/addButton"
+        app:layout_constraintTop_toTopOf="@+id/addButton"
+        app:srcCompat="@drawable/ic_circleplus"
+        app:tint="@color/cloud" />
+
+    <TextView
+        android:id="@+id/addText"
+        style="@style/homeButtonText"
+        android:text="@string/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/addButton"
+        app:layout_constraintTop_toBottomOf="@+id/addIcon" />
+
+    <ImageView
+        android:id="@+id/viewButton"
+        style="@style/homeButtonDimens"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toEndOf="@+id/addButton"
+        app:layout_constraintTop_toBottomOf="@+id/emergencyContacts"
+        app:srcCompat="@drawable/ic_homescreenbutton" />
+
+    <ImageView
+        android:id="@+id/viewIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/viewButton"
+        app:layout_constraintTop_toTopOf="@+id/viewButton"
+        app:srcCompat="@drawable/ic_glasses"
+        app:tint="@color/cloud" />
+
+    <TextView
+        android:id="@+id/viewText"
+        style="@style/homeButtonText"
+        android:text="@string/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/viewButton"
+        app:layout_constraintTop_toBottomOf="@+id/viewIcon" />
+
+    <TextView
+        android:id="@+id/sosActions"
+        style="@style/H3"
+        android:text="@string/sos_actions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addButton" />
+
+
+    <ImageView
+        android:id="@+id/locationButton"
+        style="@style/homeButtonDimens"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sosActions"
+        app:srcCompat="@drawable/ic_homescreenbutton" />
+
+    <ImageView
+        android:id="@+id/locationIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/locationButton"
+        app:layout_constraintTop_toTopOf="@+id/locationButton"
+        app:srcCompat="@drawable/ic_locationpin"
+        app:tint="@color/cloud" />
+
+
+    <TextView
+        android:id="@+id/locationText"
+        style="@style/homeButtonText"
+        android:text="@string/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@id/locationButton"
+        app:layout_constraintTop_toBottomOf="@id/locationIcon" />
+
+    <ImageView
+        android:id="@+id/smstxtButton"
+        style="@style/homeButtonDimens"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toEndOf="@id/locationButton"
+        app:layout_constraintTop_toBottomOf="@+id/sosActions"
+        app:srcCompat="@drawable/ic_homescreenbutton" />
+
+    <ImageView
+        android:id="@+id/smstxtIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/smstxtButton"
+        app:layout_constraintTop_toTopOf="@+id/smstxtButton"
+        app:srcCompat="@drawable/ic_smstxt"
+        app:tint="@color/cloud" />
+
+
+    <TextView
+        android:id="@+id/smstxtText"
+        style="@style/homeButtonText"
+        android:text="@string/sms_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@id/smstxtButton"
+        app:layout_constraintTop_toBottomOf="@id/smstxtIcon" />
+
+
+    <ImageView
+        android:id="@+id/moreButton"
+        style="@style/homeButtonDimens"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toEndOf="@id/smstxtButton"
+        app:layout_constraintTop_toBottomOf="@+id/sosActions"
+        app:srcCompat="@drawable/ic_homescreenbutton" />
+
+    <ImageView
+        android:id="@+id/moreIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/moreButton"
+        app:layout_constraintTop_toTopOf="@+id/moreButton"
+        app:srcCompat="@drawable/ic_morehorizontal"
+        app:tint="@color/cloud" />
+
+
+    <TextView
+        android:id="@+id/moreText"
+        style="@style/homeButtonText"
+        android:text="@string/more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@id/moreButton"
+        app:layout_constraintTop_toBottomOf="@id/moreIcon" />
+
+
+    <ImageView
+        android:id="@+id/illusHome"
+        android:layout_width="433dp"
+        android:layout_height="222dp"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/illus_home" />
+
+    <LinearLayout
+        android:id="@+id/deviceStatusRootGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locationButton">
+
+
+        <ImageView
+            android:id="@+id/deviceIcon"
+            android:layout_width="158dp"
+            android:layout_height="155dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/smstxtButton"
+            app:srcCompat="@drawable/ic_deviceicon" />
+
+
+        <LinearLayout
+            android:id="@+id/deviceStatusGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintStart_toEndOf="@id/deviceIcon"
+            app:layout_constraintTop_toBottomOf="@id/moreButton">
+
+            <TextView
+                android:id="@+id/deviceStatusTitle"
+                style="@style/H3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:text="@string/device_status"
+                app:layout_constraintStart_toEndOf="@+id/deviceIcon"
+                app:layout_constraintTop_toBottomOf="@+id/moreButton" />
+
+
+            <LinearLayout
+                android:id="@+id/batteryLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="16dp"
+                app:layout_constraintStart_toEndOf="@id/deviceIcon"
+                app:layout_constraintTop_toBottomOf="@id/deviceStatusTitle"
+                android:layout_marginStart="16dp">
+
+                <TextView
+                    android:id="@+id/batteryTitle"
+                    style="@style/body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/battery"
+                    app:layout_constraintStart_toEndOf="@+id/deviceIcon"
+                    app:layout_constraintTop_toBottomOf="@+id/deviceStatusTitle" />
+
+                <TextView
+                    android:id="@+id/batteryLevel"
+                    style="@style/body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/medium"
+                    app:layout_constraintStart_toEndOf="@+id/batteryTitle"
+                    app:layout_constraintTop_toBottomOf="@+id/deviceStatusTitle" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintStart_toEndOf="@+id/batteryLevel"
+                    app:layout_constraintTop_toBottomOf="@+id/deviceStatusTitle"
+                    app:srcCompat="@drawable/ic_battery60" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/syncedLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="16dp"
+                app:layout_constraintStart_toEndOf="@id/deviceIcon"
+                app:layout_constraintTop_toBottomOf="@id/batteryLine"
+                android:layout_marginStart="16dp">
+
+                <TextView
+                    android:id="@+id/syncedTitle"
+                    style="@style/body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/synced"
+                    app:layout_constraintStart_toEndOf="@+id/deviceIcon"
+                    app:layout_constraintTop_toBottomOf="@+id/batteryLine" />
+
+                <TextView
+                    android:id="@+id/lastSynceTime"
+                    style="@style/body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Dec 8, 8:55 PM"
+                    app:layout_constraintStart_toEndOf="@+id/syncedTitle"
+                    app:layout_constraintTop_toBottomOf="@+id/batteryLine" />
+            </LinearLayout>
+
+                <Button
+                    style="@style/buttonText"
+                    android:id="@+id/logOutButton"
+                    android:layout_width="172dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/sync_now"
+                    app:backgroundTint="@color/flamingo"
+                    app:icon="@drawable/ic_error"
+                    app:layout_constraintStart_toEndOf="@+id/deviceIcon"
+                    app:layout_constraintTop_toBottomOf="@+id/syncedLine" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/navigationBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bottom_navigation_bar_sleek"
+        app:tint="@color/iris_10" />
+
+    <ImageView
+        android:id="@+id/deviceButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        android:onClick="toDeviceSettings"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/navigationBar"
+        app:layout_constraintTop_toTopOf="@id/navigationBar"
+        app:srcCompat="@drawable/ic_device_unselected" />
+
+    <ImageView
+        android:id="@+id/mapsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:onClick="toNavigation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/navigationBar"
+        app:srcCompat="@drawable/ic_map_unselected" />
+
+    <ImageView
+        android:id="@+id/HomeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/deviceButton"
+        app:layout_constraintStart_toEndOf="@+id/mapsButton"
+        app:layout_constraintTop_toTopOf="@+id/navigationBar"
+        app:srcCompat="@drawable/ic_home" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
