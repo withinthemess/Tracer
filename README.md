@@ -17,6 +17,11 @@ It should download the needed SDKs automatically
  Send a fake message from the emulator to any number with "  XXlatitudeXXX, XXlongitudeXXX " 
  and open the app, go to the navigation page, and it will read the SMS message and zoom on the location.
  
+ Component Used:
+ Firebase realtime database
+ Firebase authentication
+ Constraint layout + animation
+ 
  
  
 The Website: 
