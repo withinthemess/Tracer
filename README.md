@@ -5,7 +5,8 @@ Tracer is made out of 3 main parts
 ==> A Website
 ==> A Hardware Device
 
-/n Demo video: https://youtu.be/aAIiPirII1M
+Demo video: https://youtu.be/aAIiPirII1M
+
 Android Application:
 
 In this repo you will find the code for our application, export it and open it in android studio.
