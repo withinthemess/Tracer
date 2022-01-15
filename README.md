@@ -44,3 +44,30 @@ Install the CH341SER driver for the ESP8266
 The code can be found here: https://github.com/withinthemess/TracerHardware
 
 
+
+
+![1](https://user-images.githubusercontent.com/46242342/149631757-1577cb6b-72a5-4984-8645-87cd178d3299.png)
+
+![2](https://user-images.githubusercontent.com/46242342/149631762-1596b1aa-2f22-44ae-abe8-a66deee2911d.png)
+
+![3](https://user-images.githubusercontent.com/46242342/149631767-b0506cbd-f013-404c-82d6-f3ddf97d4359.png)
+
+![4](https://user-images.githubusercontent.com/46242342/149631778-eed1e5e0-1055-4dad-8822-a081ede3a2ac.png)
+
+![5](https://user-images.githubusercontent.com/46242342/149631782-e5d9341f-d563-4a5d-97f7-724690b46ff3.png)
+
+![5_1](https://user-images.githubusercontent.com/46242342/149631788-2b61efeb-368e-46f9-b3ff-8493b643df58.png)
+
+![5_2](https://user-images.githubusercontent.com/46242342/149631802-e9a7f6ac-eda6-4b93-952e-1ac7fa0e2cd3.png)
+
+![6](https://user-images.githubusercontent.com/46242342/149631811-7e9d9b40-ca36-4bc8-b419-bd7e0cd28437.png)
+
+![7](https://user-images.githubusercontent.com/46242342/149631817-02f14024-7376-4765-8908-68acf4b909fb.png)
+
+![8](https://user-images.githubusercontent.com/46242342/149631822-d6137973-1779-4b55-a889-e511f300439f.png)
+
+![9](https://user-images.githubusercontent.com/46242342/149631827-e61f8683-6ea5-4c4f-ab6c-05dfc0e87f28.png)
+
+![10](https://user-images.githubusercontent.com/46242342/149631839-e6f8f7d1-d435-4612-a85c-f6c12d66f76a.png)
+
+![11](https://user-images.githubusercontent.com/46242342/149631842-3cddf6d9-6895-47b9-a551-9d622f096cee.png)
