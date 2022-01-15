@@ -70,4 +70,4 @@ The code can be found here: https://github.com/withinthemess/TracerHardware
 
 ![10](https://user-images.githubusercontent.com/46242342/149631839-e6f8f7d1-d435-4612-a85c-f6c12d66f76a.png)
 
-![11](https://user-images.githubusercontent.com/46242342/149631842-3cddf6d9-6895-47b9-a551-9d622f096cee.png)
+![11](https://user-images.githubusercontent.com/46242342/149631962-6d9c485d-e1c5-4ff4-ab3f-e5514b42e729.png)
